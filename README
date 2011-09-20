@@ -1,0 +1,15 @@
+bcut - binary cut
+
+Output a number of bytes from a given offset in a file.
+
+I needed to output a few thousand bytes at offset 0x38576800 within a 20GB
+file, and I figured all existing tiny tools I had at hand had different
+shortcomings or bottlenecks.
+
+Note that offset and length can be given as hex if you prefix with 0x.
+
+Output is sent to stdout, redirect at will.
+
+Daniel Stenberg <daniel@haxx.se>
+
+Consider this code MIT licensed.
